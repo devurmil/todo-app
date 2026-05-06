@@ -1,16 +1,115 @@
-# React + Vite
+# 🚀 React Redux Todo & Product Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React + Redux Toolkit** application with authentication, protected routing, and full CRUD operations using API integration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Features
 
-## React Compiler
+* 🔐 User Authentication (Login with JWT)
+* 🛡️ Protected Routes
+* 📦 Product Listing (API-based)
+* ➕ Add Product
+* ✏️ Update Product
+* ❌ Delete Product
+* 📊 Total Records Display
+* ⚡ Fast build with Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* ⚛️ React (Vite)
+* 🧠 Redux Toolkit
+* 🔀 React Router
+* 🌐 Axios (API handling)
+* 🎨 Material UI (UI Components)
+
+---
+
+## 🔗 APIs Used
+
+* Auth API: https://dummyjson.com/auth/login
+* Products API: https://dummyjson.com/products
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── app/              # Redux store
+ ├── features/         # Redux slices (auth, products)
+ ├── pages/            # Login, Products
+ ├── components/       # Reusable components
+ ├── routes/           # Protected routes
+ └── main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+
+# Navigate to project
+cd your-repo-name
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+```
+
+---
+
+## 🔑 Test Credentials
+
+```
+username: kminchelle
+password: 0lelplR
+```
+
+---
+
+## 🧠 Key Implementation Details
+
+* Used **Redux Toolkit** for scalable state management
+* Implemented **createAsyncThunk** for API handling
+* Stored JWT token in **localStorage** for session persistence
+* Built **Protected Routes** for secure navigation
+* Managed CRUD operations using centralized Redux store
+
+---
+
+## ⚠️ Challenges Faced
+
+* Handling async API errors
+* Managing global state efficiently
+* Implementing edit/update flow with pre-filled forms
+
+---
+
+## 🚀 Future Improvements
+
+* 🔄 Token refresh & auto logout
+* 🔍 Search & filter products
+* 📱 Responsive UI improvements
+* 🧪 Unit testing (Jest)
+
+---
+
+## 👨‍💻 Author
+
+**Urmil Ramani**
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates real-world frontend development skills including authentication, state management, API integration, and scalable architecture.
+
+---
